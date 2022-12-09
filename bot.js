@@ -9,10 +9,6 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 // We use 'c' for the event parameter to keep it separate from the already defined 'client'
 client.once(Events.ClientReady, c => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
-    console.log(`Ready! Logged in as ${c.user.id}`)
-    console.log(`Ready! Logged in as ${c.user.username}`)
-    console.log(`Ready! Logged in as ${c.user.username}`)
-    console.log(`Ready! Logged in as ${c.user.username}`)
 });
 
 // Log in to Discord with token

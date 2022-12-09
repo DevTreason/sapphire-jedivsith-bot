@@ -10,6 +10,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 client.once(Events.ClientReady, c => {
 	console.log(`Ready! Logged in as ${c.user.tag}`);
     console.log(`Ready! Logged in as ${c.user.id}`)
+    console.log(`Ready! Logged in as ${c.user.username}`)
 });
 
 // Log in to Discord with token
